@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PRIYANSHU</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="image/stars.png" id="stars">
+        <img src="image/moon.png" id="moon">
+        <img src="image/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">The Moon Resort</h2>
+        <a href="#sec" id="btn">Book now</a>
+        <img src="image/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>The Moon Resort</h2>
+        <h4><i>WELCOME TO </i></h4>
+        <h3>WIDE OPEN SPACES AND THE TRUE AMERICAN WEST</h3>
+        <p>Time seems to stand still at Brush Creek Ranch, a collection of all-inclusive guest ranches in Wyoming.<br> It's a place where beautiful sunsets and starlit night skies instill wonder. Immerse yourself in over 30,000 secluded acres, and pause from life's everyday demands. Reconnect, Relax, and Rejoice in unbridled luxury.</p>
+    </div>
+    </div>
+    <div class="sec2" id="sec2">
+            <h4>THE IN-BETWEEN TIME</h4>
+            <h3>RELAX & CONNECT</h3>
+            <h4><i>These are the moments take your breath away, awaken your senses<br>
+                   and demand your full attention.</i> 
+            </h4>
+            <img src="image/sec2/1.jpg">
+            <p>"What we have found time and again over the last decade at the Ranch - and this year in particular - is that even in the midst of the most grand adventure, it is often the unplanned moments that make the most indelible memories. Each guest experiences these moments of connection and reflection in ways as individual as they are." - Mike Williams, COO</p> 
+            <p>
+            Each trip to Brush Creek Ranch is tailored to your unique interests. Tell us a bit about yourself and what you'd like to experience while at The Ranch, and a member of our experienced staff will be in touch shortly to start crafting your perfect adventure and to provide a custom package and rates.
+            </p>  
+    </div>
+    <div class="sec5">
+        <h2 data-text="Land Area">
+            Land Area
+        </h2>
+        
+    </div> 
+    <div class="sec3">
+        <h1>30,000 acres <hr><b>OF BRUSH CREEK RANCH AMERICAN WEST</b></h1>
+        <h1>3 <hr><b>MILES OF ENCAMPMENT RIVER ACCESS</b></h1>
+        <h1>10 <hr><b>MILES OF NORTH PLATTE PRIVATE WATER</b></h1>
+        
+        <h1>5,100 feet <hr><b>OF ELEVATION CHANGE</b></h1>
+        <h1>45 <hr><b>MILES OF EXPANSIVE ROLLING WILDERNESS</b></h1>
+        <h1>50 <hr><b>MILES OF HIKING TRAILS</b></h1>
+    </div>
+    
+    <div class="sec4">
+        <img src="image/sec4/map.jpg" alt="map of resort">
+        <h3>AN INDESCRIBABLE LUXURY RANCH DESTINATION <br><b>Majestic beauty. Rich history. Traditional rusticity. Brush Creek Ranch offers 30,000 acres of a working cattle ranch. Surrounded by prairies, mountains, creeks and rivers, our luxury ranch is perched in the center of the true American West. Venture into views, experiences, and moments that will leave you speechless.</b><br><a target="_blank" href="#">SUMMER DIRECTION</a> <a target="_blank" href="#">WINTER DIRECTION</a><br><br><a target="_blank" href="#">PROPERTY MAP</a></h3>
+    </div>
+    <div class="landscape">
+        <img src="image/sec4/landscape-view.png" alt="landscape view from resort">
+    </div>
+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25+'px';
+            moon.style.top = value*1.05+'px';
+            mountains_behind.style.top = value*0.5+'px';
+            mountains_front.style.top = value*0+'px';
+            text.style.marginRight = value*4+'px';
+            text.style.marginTop = value*1.5+'px';
+            text.style.marginTop = value*1.5+'px';
+            btn.style.marginTop = value*1.5+'px';
+            header.style.top = value*0.5+'px';
+        })
+    </script>
+</body>
+</html>
+

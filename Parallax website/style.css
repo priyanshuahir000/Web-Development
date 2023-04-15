@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background: #2b1055;   
+    overflow-x: hidden;
+} 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active {
+    background-color: #fff;
+    color: #2b1055;
+    transition: 0.5s;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(top, #1c0522, transparent );
+    z-index: 100000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon {
+   mix-blend-mode: screen; 
+}
+section img#mountains_front {
+    z-index: 10;
+}
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    right: -350px;
+}
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color:#2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 200;
+    font-family: 'PT Serif', serif;
+}
+.sec h4 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 100;
+    font-family: 'PT Serif', serif;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    padding: 20px 20px 20px 5px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------sec1
+    <div class="sec1">
+    <h1>GRAND ADVENTURE AND ALL-INCLUSIVE LUXURY</h1>
+    <p>Experience the award-winning Brush Creek Ranch, an authentic western ranch resort destination. This truly magnificent luxury getaway is home to the Travel + Leisure #1 Resort in the US, #1 in the West, Top Family Friendly Resort and #14 Hotel in the World, the Conde Nast Traveler Reader's Choice #3 Resort Hotel in the U.S. and the highly-touted Forbes Travel Guide Five Star Hotel.</p>
+    <p>Immerse yourself in the storied Great American West at our three, all-inclusive, luxury ranch resorts located in stunning Saratoga, Wyoming. Explore the North Platte River Valley of south-central Wyoming, nestled between the ancient Sierra Madre mountain range and stunning Medicine Bow National Forest.</p>
+    ---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+.sec1 {
+    background-color: #ae7cff;
+    color: #000;
+}
+
+.sec1 h1 {
+    font-size: 24px;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.sec1 p {
+    padding: 0px 180px 0px 180px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------sec2---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+.sec2 {
+    position: relative;
+    padding: 0px 100px 100px 100px;
+    margin-top: 0;
+    background: #2b1055;
+}
+
+.sec2 h4 {
+    color: rgb(134, 101, 250);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.sec2 h4 i {
+    color: #e6e6e699;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.sec2 h3 {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 10px;
+}
+.sec2 p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    margin-top: 20px;
+    margin-right: 40%;
+}
+.sec2 img {
+    width: 30%;
+}
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------SEC 3---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+.sec3  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #fff;
+    padding-bottom: 200px;
+}	
+
+.sec3 h1 {
+    font-size: 80px;
+    padding: 90px 90px 0px 80px;
+    font-family: 'PT Serif', serif;  
+    color: black;
+    font-weight: 500;
+}
+
+.sec3 h1 b {
+    font-size: 12.8px;
+    display: flex;
+    color: #ae7cff;
+    padding-top: 10px;    
+}
+.sec3 h1 hr {
+    border: 1px solid rgb(24, 19, 19);
+}
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------SEC 4---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+.sec4 {
+    background-color: #fff;
+    display: inline-flex;
+}
+
+.sec4 img {
+    width: 60%;
+    padding-left: 120px;
+    padding-bottom: 100PX;
+    display: block;
+    max-width: 100%;
+}
+
+.sec4 h3 {
+    font-size: 24px;
+    color: black;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding: 90px 190px 10px 0px;
+}
+
+.sec4 h3 b {
+    font-size: 16px;
+    color: black;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding: 20px 60px 0px 0px;
+    display: flex;
+}
+
+.sec4 h3 a {
+    font-size: 11px;
+    color: #fff;
+    background-color: #2b1055;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    height: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 15px 5px 0px;
+    font-family: 'PT Serif', serif;
+    border-radius: 25px;
+}
+
+.sec4 h3 a:hover {
+    background-color: #fff;
+    color: #2b1055;
+    border: 2px solid #2b1055;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------landscape ---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+.landscape {
+    background-color: #fff;
+    max-height: 500px;
+}
+.landscape img {
+    width: 100%;
+    margin-top: -10px;
+    padding-bottom: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------
+-----------------------------------------------SEC 5---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+.sec5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #fff;
+    color: black;
+    padding-top: 30px;
+}
+.sec5 h2 {
+    position: relative;
+    font-size: 5em;
+    border-bottom: 1px solid #000;
+}
+
+.sec5 h2::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #ae7cff;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #ae7cff) drop-shadow(0 0 0px #ae7cff); 
+}
+
+@keyframes animate {
+    0%,10%,100% 
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+
+
