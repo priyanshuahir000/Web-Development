@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="resources/img/tab-logo.png">
+    <title>Computer Department - LDRP</title>
+</head>
+<body>
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Navigation
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <a href="index.html" class="logo"><img src="resources/img/logo.png"></a>
+        <div class="menuToggle"></div>
+    </header>
+        <ul class="navigation">
+            <li><a href="student-corner.html" onclick="menuToggle();">student corner</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">About LDRP</a></li>
+            <li><a href="svkm.html"onclick="menuToggle();">About SVKM</a></li>
+            <li><a href="placement.html" onclick="menuToggle();">PLacement</a></li>
+            <li><a href="ncc.html" onclick="menuToggle();">NCC</a></li>
+            <li><a href="nss.html" onclick="menuToggle();">NSS</a></li>
+            <li><a href="sports.html" onclick="menuToggle();">Sports</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">about us</a></li>
+            <li><a href="#footer" onclick="menuToggle();">Contact us</a></li>
+            <li><a href="#" onclick="menuToggle();">Sitemap</a></li>
+        </ul>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Section 1
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<div class="NCC-NSS">
+    <h1>NSS</h1>
+    <hr><br>
+    <p>Volunteers works selflessly on “Don't wait for the change, be the change”.<br><br>LDRP is running 1 unit (100 Volunteers) of NSS. Students is actively participating social activities like Blood Donation Camp, Medical Check up Camp, Thalassemia Awareness and Testing Camp.<br><br>Every Year volunteers are celebrating Engineers Day, Aids Day, Women’s Day, Population Day, Ozone Day, Teachers Day and Sanvedna Saptaah.<br><br>Volunteers are participating in 7 days residential camp in different village.<br><br>Volunteers have participated in National Integration Camp, Pre Republic Day Camp and attended BHARTIYA CHATRA SANSAD Seminar.</p>
+    <div class="ncc-grid-wrapper">
+        <div>
+            <img src="resources/nss-image/1.jpg">
+        </div>
+        <div>
+            <img src="resources/nss-image/5.jpg">
+        </div>
+        <div class="tall">
+            <img src="resources/nss-image/2.jpg">
+        </div>
+        <div class="wide">
+            <img src="resources/nss-image/15.jpg">
+        </div>
+        <div>
+            <img src="resources/nss-image/6.jpg">
+        </div>
+        <div class="tall">
+            <img src="resources/nss-image/3.jpg">
+        </div>
+        <div class="big">
+            <img src="resources/nss-image/8.jpg">
+        </div>
+        <div>
+            <img src="resources/nss-image/9.jpg">
+        </div>
+        <div class="wide">
+            <img src="resources/nss-image/10.jpg">
+        </div>
+        <div class="tall">
+            <img src="resources/nss-image/11.jpg">
+        </div>
+        <div>
+            <img src="resources/nss-image/12.jpg">
+        </div>
+        <div>
+            <img src="resources/nss-image/13.jpg">
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Footer
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-contentBx column-1">
+                <h3>Reach us</h3>
+                <p class="first">
+                    <a href="https://goo.gl/maps/uuMaVxNpe6vvjpDd7"><b>Address:</b></a>
+                    <br>
+                    LDRP Institute of Technology & Research,
+                    <br>
+                    Near KH-5,
+                    <br>
+                    Sector 15,
+                    <br>
+                    Gandhinagar
+                </p>
+                <p class="second">
+                    <br>
+                    <b>Email: </b>info@ldrp.ac.in
+                    <br>
+                    <b>Phone: </b>+91-079-23241492
+                    <br>
+                    <b>Fax: </b>+91-079-23241493
+                </p>
+            </div>
+            <div class="footer-contentBx column-2">
+                <a href="#">Back to Top</a>
+                <a href="admission-inquery.html">Admission Inquiry</a>
+                <a href="personalAssistant.html">Personal Assistant</a>
+                <a href="about-us.html">about-us</a>
+            </div>
+            <div class="footer-contentBx column-3">
+                <a href="ce.html">Computer Engineering</a>
+                <a href="it.html">Information Technology</a>
+                <a href="ec.html">Electronics and Comunication</a>
+                <a href="civil.html">Civil Engineering</a>
+                <a href="elec.html">Electrical Engineering</a>
+                <a href="mech.html">Mechanical Engineering</a>
+                <a href="automobile.html">Automobile Engineering</a>
+            </div>
+            <div class="footer-contentBx column-4">
+                <a href="#" target="_blank"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="mail-open-outline" class="mail"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Script
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function()
+        {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        function toggleMenu() {
+            menuToggle.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

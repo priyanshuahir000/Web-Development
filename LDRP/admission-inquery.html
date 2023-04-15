@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="resources/img/tab-logo.png">
+    <title>Admission Inquery - LDRP</title>
+</head>
+<body>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Navigation
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+    <header>
+        <a href="index.html" class="logo"><img src="resources/img/logo.png"></a>
+        <div class="menuToggle"></div>
+    </header>
+        <ul class="navigation">
+            <li><a href="student-corner.html" onclick="menuToggle();">student corner</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">About LDRP</a></li>
+            <li><a href="svkm.html"onclick="menuToggle();">About SVKM</a></li>
+            <li><a href="placement.html" onclick="menuToggle();">PLacement</a></li>
+            <li><a href="ncc.html" onclick="menuToggle();">NCC</a></li>
+            <li><a href="nss.html" onclick="menuToggle();">NSS</a></li>
+            <li><a href="sports.html" onclick="menuToggle();">Sports</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">about us</a></li>
+            <li><a href="#footer" onclick="menuToggle();">Contact us</a></li>
+            <li><a href="#" onclick="menuToggle();">Sitemap</a></li>
+        </ul>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        section 1
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<div class="admission">
+    <form class="admission-form" name="admission-form"  netlify>
+        <div class="segment">
+            <h1>Admission Inquiry</h1>
+        </div>
+    
+        <label class="admission-label" >
+            <input class="admission-input" id="name"  type="text" title="Please enter your full name" placeholder="Name">
+        </label>
+        <label class="admission-label" >
+            <input class="admission-input" id="email"  type="email" title="Email must contain @" placeholder="Email">
+        </label>
+        <label class="admission-label" >
+            <input class="admission-input" type="tel" maxlength="10" id="number"  title="Enter a 10 digit mobile number"  placeholder="Moile Number">
+        </label>
+        <label class="admission-label" >
+            <select class="admission-input admission-state" id="state" >
+                <option value="none" hidden>State</option>
+                <option value="Gujarat">Gujarat</option><option value="Andhra Pradesh">Andhra Pradesh</option><option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chandigarh">Chandigarh</option><option value="Chhattisgarh">Chhattisgarh</option><option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option><option value="Daman and Diu">Daman and Diu</option><option value="Delhi">Delhi</option><option value="Lakshadweep">Lakshadweep</option><option value="Puducherry">Puducherry</option><option value="Goa">Goa</option><option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jammu and Kashmir">Jammu and Kashmir</option><option value="Jharkhand">Jharkhand</option><option value="Karnataka">Karnataka</option><option value="Kerala">Kerala</option><option value="Madhya Pradesh">Madhya Pradesh</option><option value="Maharashtra">Maharashtra</option><option value="Manipur">Manipur</option><option value="Meghalaya">Meghalaya</option><option value="Mizoram">Mizoram</option><option value="Nagaland">Nagaland</option><option value="Odisha">Odisha</option><option value="Punjab">Punjab</option><option value="Rajasthan">Rajasthan</option><option value="Sikkim">Sikkim</option><option value="Tamil Nadu">Tamil Nadu</option><option value="Telangana">Telangana</option><option value="Tripura">Tripura</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="Uttarakhand">Uttarakhand</option><option value="West Bengal">West Bengal</option>
+            </select>
+        </label class="admission-label" >
+        <label class="admission-label" >
+            <input class="admission-input" type="text" id="city"  placeholder="City">
+        </label>
+        <label class="admission-label" >
+            <select class="admission-input" id="course" name="course">
+                <option value="none" hidden>Course</option>
+                <option value="BE">BE</option>
+                <option value="D2D">D2D</option>
+            </select>
+        </label>
+        <label class="admission-label" >
+            <select class="admission-input" id="branch">
+                <option value="none" hidden>Branch</option>
+                <option value="ce">Computer Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="ec">Electrical Engineering</option>
+                <option value="ae">Automobile Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+                <option value="ec">Electronics and Communication</option>
+                <option value="it">Information Technology</option>
+            </select>
+        </label>
+        <label class="admission-label" >
+            <textarea class="admission-input admission-textarea" id="remark"  placeholder="Write Reamrk(if any)......" rows="5" cols="5"></textarea>
+        </label>
+        <button class="red admission-button" value="submit" type="submit">Send</button>
+    
+        <div class="segment">
+            <button class="admission-unit admission-button" type="button" onclick="history.back()"><ion-icon name="arrow-back-outline" class="admission-icon"></ion-icon></button>
+            <a class="admission-unit admission-button" href="#footer"><ion-icon name="call-outline" class="admission-icon"></ion-icon></a>
+            <button class="admission-unit admission-button" type="reset"><ion-icon name="refresh-outline" class="admission-icon" ></ion-icon></button>
+          </div>
+    </form>
+</div>
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        footer
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+    <div class="footer-content" id="footer">
+        <div class="footer-contentBx column-1">
+            <h3>Reach us</h3>
+            <p class="first">
+                <a href="#"><b>Address:</b></a>
+                <br>
+                LDRP Institute of Technology & Research,
+                <br>
+                Near KH-5,
+                <br>
+                Sector 15,
+                <br>
+                Gandhinagar
+            </p>
+            <p class="second">
+                <br>
+                <b>Email: </b>info@ldrp.ac.in
+                <br>
+                <b>Phone: </b>+91-079-23241492
+                <br>
+                <b>Fax: </b>+91-079-23241493
+            </p>
+        </div>
+        <div class="footer-contentBx column-2">
+            <a href="#">Back to Top</a>
+            <a href="#">Admission Inquiry</a>
+            <a href="#">Personal Assistant</a>
+            <a href="#">Mca Inquiry</a>
+        </div>
+        <div class="footer-contentBx column-3">
+            <a href="ce.html">Computer Engineering</a>
+            <a href="#">Information Technology</a>
+            <a href="#">Electronics and Comunication</a>
+            <a href="#">Civil Engineering</a>
+            <a href="#">Electrical Engineering</a>
+            <a href="#">Mechanical Engineering</a>
+            <a href="#">Automobile Engineering</a>
+        </div>
+        <div class="footer-contentBx column-4">
+            <a href="#" target="_blank"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+            <a href="#" target="_blank"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
+            <a href="#" target="_blank"><ion-icon name="mail-open-outline" class="mail"></ion-icon></a>
+        </div>
+    </div>
+</footer>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                    credits
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+   <hr>
+    <div class="credits">
+        <p>
+            Copyright © 2022 LDRP-ITR. All rights reserved | Build By Priyanshu S. Baraiya | This is just a project not an actual website of the institution
+        </p>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                    script
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+<script>
+
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.onclick = function()
+     {
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    })
+
+    function toggleMenu() {
+        menuToggle.classList.remove('active');
+        navigation.classList.remove('active');
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

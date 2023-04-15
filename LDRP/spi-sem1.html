@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="resources/img/tab-logo.png">
+    <title>Computer Department - LDRP</title>
+</head>
+<body>
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Navigation
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <a href="index.html" class="logo"><img src="resources/img/logo.png"></a>
+        <div class="menuToggle"></div>
+    </header>
+        <ul class="navigation">
+            <li><a href="student-corner.html" onclick="menuToggle();">student corner</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">About LDRP</a></li>
+            <li><a href="svkm.html"onclick="menuToggle();">About SVKM</a></li>
+            <li><a href="placement.html" onclick="menuToggle();">PLacement</a></li>
+            <li><a href="ncc.html" onclick="menuToggle();">NCC</a></li>
+            <li><a href="nss.html" onclick="menuToggle();">NSS</a></li>
+            <li><a href="sports.html" onclick="menuToggle();">Sports</a></li>
+            <li><a href="about-us.html" onclick="menuToggle();">about us</a></li>
+            <li><a href="#footer" onclick="menuToggle();">Contact us</a></li>
+            <li><a href="#" onclick="menuToggle();">Sitemap</a></li>
+        </ul>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Section 1
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+    <div class="spi">
+        <form class="form-spi" id="marks-form">
+            <div class="spi-segment">
+                <h3>Enter your marks</h3>
+            </div>
+    
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-1" name="subject-1" min="0" max="150" placeholder="Maths (out 0f 150)">
+            </div>
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-2" name="subject-2" min="0" max="150" placeholder="FOP (out 0f 150)">
+            </div>
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-3" name="subject-3" min="0" max="150" placeholder="Engineering Physics (out 0f 150)">
+            </div>
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-4" name="subject-4" min="0" max="150" placeholder="ECE (out 0f 150)">
+            </div>
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-5" name="subject-5" min="0" max="150" placeholder="Engineering Graphics (out 0f 150)">
+            </div>
+            <div class="spi-label">
+                <input type="number" class="spi-input" id="subject-6" name="subject-6" min="0" max="120" placeholder="ES (out 0f 120)">
+            </div>
+            <button class="spi-button" value="submit" type="submit">Calculate!</button>
+            <div class="spi-result" id="result"></div>
+        </form>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Footer
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-contentBx column-1">
+                <h3>Reach us</h3>
+                <p class="first">
+                    <a href="https://goo.gl/maps/uuMaVxNpe6vvjpDd7"><b>Address:</b></a>
+                    <br>
+                    LDRP Institute of Technology & Research,
+                    <br>
+                    Near KH-5,
+                    <br>
+                    Sector 15,
+                    <br>
+                    Gandhinagar
+                </p>
+                <p class="second">
+                    <br>
+                    <b>Email: </b>info@ldrp.ac.in
+                    <br>
+                    <b>Phone: </b>+91-079-23241492
+                    <br>
+                    <b>Fax: </b>+91-079-23241493
+                </p>
+            </div>
+            <div class="footer-contentBx column-2">
+                <a href="#">Back to Top</a>
+                <a href="admission-inquery.html">Admission Inquiry</a>
+                <a href="personalAssistant.html">Personal Assistant</a>
+                <a href="about-us.html">about-us</a>
+            </div>
+            <div class="footer-contentBx column-3">
+                <a href="ce.html">Computer Engineering</a>
+                <a href="it.html">Information Technology</a>
+                <a href="ec.html">Electronics and Comunication</a>
+                <a href="civil.html">Civil Engineering</a>
+                <a href="elec.html">Electrical Engineering</a>
+                <a href="mech.html">Mechanical Engineering</a>
+                <a href="automobile.html">Automobile Engineering</a>
+            </div>
+            <div class="footer-contentBx column-4">
+                <a href="#" target="_blank"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="mail-open-outline" class="mail"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------
+                                                        Script
+------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function()
+        {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        function toggleMenu() {
+            menuToggle.classList.remove('active');
+            navigation.classList.remove('active');
+        }
+    
+
+        /*----------------calculations----------------*/
+        const marksForm = document.getElementById("marks-form");
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerText = "Your secret is safe with us...";
+
+        marksForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+            const subject1 = parseInt(document.getElementById("subject-1").value);
+            const subject2 = parseInt(document.getElementById("subject-2").value);
+            const subject3 = parseInt(document.getElementById("subject-3").value);
+            const subject4 = parseInt(document.getElementById("subject-4").value);
+            const subject5 = parseInt(document.getElementById("subject-5").value);
+            const subject6 = parseInt(document.getElementById("subject-6").value);
+
+            if (isNaN(subject1) || isNaN(subject2) || isNaN(subject3) || isNaN(subject4) || isNaN(subject5) || isNaN(subject6)) {
+                resultDiv.innerText = "Please enter valid marks for all subjects.";
+                return;
+            }
+
+            const totalMarks = (subject1*5/150) + (subject2*4/150) + (subject3*4/150) + (subject4*5/150) + (subject5*5/150) + (subject6*2/120);
+            const percentage = (totalMarks / 24) * 10;
+            const result = `SPI: ${percentage.toFixed(2)}%`;
+            resultDiv.innerText = result;
+        });
+    </script>
+    
+</body>
+</html>
